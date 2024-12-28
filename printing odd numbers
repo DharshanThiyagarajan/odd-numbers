@@ -1,1 +1,24 @@
-printing the odd natural numbers upto the given range 
+//printing the odd natural numbers upto the given range 
+
+import java.util.*;
+public class Main
+{
+	public static void elementA(int n,int e)
+	{
+		if(n>e)
+		{
+			return;
+		}
+		System.out.print(n+" ");
+		elementA(n+2,e);
+	}
+	
+	public static void main(String[] args) {
+		//	System.out.println("Hello World");
+		Scanner w=new Scanner(System.in);
+		System.out.print("Enter the odd nums upto: ");
+		int e=w.nextInt();
+		int n=1;
+		elementA(n,e);
+	}
+}
